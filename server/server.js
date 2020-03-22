@@ -1,5 +1,6 @@
 // Global Variables
 global.rasa_endpoint =  process.env.rasa_endpoint || process.env.npm_package_config_rasa_endpoint;
+global.rasa_action_endpoint =  process.env.rasa_action_endpoint || process.env.npm_package_config_rasa_action_endpoint;
 global.jwtsecret = process.env.jwtsecret || process.env.npm_package_config_jwtsecret;
 global.loglevel = process.env.loglevel || process.env.npm_package_config_loglevel;
 global.admin_username = process.env.admin_username || process.env.npm_package_config_admin_username;

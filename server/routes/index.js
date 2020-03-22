@@ -136,9 +136,10 @@ router.put('/rasa/model', rasa_router.loadRasaModel);
 router.delete('/rasa/model', rasa_router.unloadRasaModel);
 router.post('/rasa/model/parse', rasa_router.modelParseRequest);
 router.post('/rasa/conversations/messages', rasa_router.conversationParseRequest);
+router.post('/rasa/conversations/triggerIntent', rasa_router.triggerIntentRequest);
 router.post('/rasa/restart', rasa_router.restartRasaCoreConversation);
 router.get('/rasa/story', rasa_router.getConversationStory);
-router.post('/rasa/conversations/execute', rasa_router.runActionInConversation);
+router.post('/rasa/conversations/action', rasa_router.runActionInConversation);
 
 
 //authentication js

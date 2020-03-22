@@ -30,7 +30,8 @@
     "winston": "^3.2.1"
   },
   "config": {
-    "rasa_endpoint": "http://10.211.55.8:5005",
+    "rasa_endpoint": "http://server-x:5005",
+    "rasa_action_endpoint": "http://server-x:5055",
     "loglevel": "info",
     "jwtsecret": "mysecret",
     "admin_username": "admin",
@@ -54,6 +55,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "nodemon": "^2.0.2"
   }
 }
